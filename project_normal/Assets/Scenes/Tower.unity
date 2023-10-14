@@ -5088,9 +5088,9 @@ MonoBehaviour:
   - name: Basic Turret
     cost: 100
     prefab: {fileID: 5453542134851049795, guid: c723dd0955d70d04893401570ead17f3, type: 3}
-  - name: Test Turret
-    cost: 150
-    prefab: {fileID: 5453542134851049795, guid: 50bb7d9935369574d92d855838289734, type: 3}
+  - name: Slowmo Turret
+    cost: 200
+    prefab: {fileID: 87477068720336773, guid: 29319a9dfe73b364d9f5e6389b745c44, type: 3}
 --- !u!1001 &453614854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5484,7 +5484,7 @@ RectTransform:
   m_GameObject: {fileID: 493800803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.42498, y: 0.57091576, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.57091576, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 274807924}
@@ -10080,7 +10080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 90, y: -90}
+  m_AnchoredPosition: {x: 0.000045776367, y: -98}
   m_SizeDelta: {x: -100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059149326
@@ -10331,14 +10331,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.4862745}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c9029c0c917f9f747923befecfb3b43e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10977,7 +10977,7 @@ GameObject:
   - component: {fileID: 1129905163}
   - component: {fileID: 1129905162}
   m_Layer: 5
-  m_Name: Test Turret
+  m_Name: Slowmo Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10992,7 +10992,7 @@ RectTransform:
   m_GameObject: {fileID: 1129905160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.42498, y: 0.57091576, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.57091576, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1978631483}
@@ -13564,51 +13564,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8455131926305131781, guid: 1a9684c42e0c05c4a87041e9752711b0, type: 3}
   m_PrefabInstance: {fileID: 1442580516}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1451309235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1451309237}
-  - component: {fileID: 1451309236}
-  m_Layer: 0
-  m_Name: PlayerStats
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1451309236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451309235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f01b811040b2b469250b0270b5d905, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 10
---- !u!4 &1451309237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451309235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1452858424
 GameObject:
   m_ObjectHideFlags: 0
@@ -16028,7 +15983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -4, y: -35}
+  m_AnchoredPosition: {x: -63, y: -61}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748447315
@@ -18080,7 +18035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
+  m_AnchoredPosition: {x: 0, y: -26.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1978631484
@@ -18103,7 +18058,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Test Turret
+  m_text: 'Freeze Tower
+
 
 
 '
