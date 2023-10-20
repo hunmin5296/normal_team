@@ -14,7 +14,7 @@ TagManager:
   - UI
   - Background
   - Ground
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -50,4 +50,7 @@ TagManager:
     locked: 0
   - name: background
     uniqueID: 472277749
+    locked: 0
+  - name: Turret
+    uniqueID: 2881873517
     locked: 0
