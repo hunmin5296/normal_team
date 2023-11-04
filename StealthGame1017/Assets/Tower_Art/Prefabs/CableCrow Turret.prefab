@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 1610853494578550643}
   - component: {fileID: 1610853494578550642}
   m_Layer: 0
-  m_Name: Turret
+  m_Name: CableCrow Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +90,7 @@ Transform:
   m_GameObject: {fileID: 1610853494578550645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.61, y: -1.5, z: 0}
-  m_LocalScale: {x: 0.7576505, y: 0.7576505, z: 0.7576505}
+  m_LocalScale: {x: 1.1795104, y: 1.1795104, z: 1.1795104}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1610853493728885233}
@@ -138,7 +138,7 @@ SpriteRenderer:
   m_SortingLayerID: -1413093779
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 057c83d03e2c2024ea740927936cf8dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78ac2f9e1d88e7c44bf7dfc90c6fe862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -165,8 +165,8 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 256
-  bulletPrefab: {fileID: 368877032209172533, guid: 29ef010fb8c81be44b2b56508cc5c820, type: 3}
+  bulletPrefab: {fileID: 368877032209172533, guid: e3cdb9e3ca8a4ff43a0faa07c633b275, type: 3}
   firingPoint: {fileID: 1610853494442782692}
-  targetingRange: 3.5
+  targetingRange: 5.5
   rotationSpeed: 5
-  bps: 1
+  bps: 0.5
