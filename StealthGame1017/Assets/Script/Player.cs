@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator anim;
     public float JumpPower;
-
+    public Transform respawnPoint;
     private bool isJumping = false; // 추가: 점프 중인지 여부
 
     void Awake()
@@ -77,5 +77,16 @@ public class Player : MonoBehaviour
         {
             isJumping = false;
         }
+    }
+
+    public void Die()
+    {
+        // 죽은 후 리스폰 지점으로 이동
+        transform.position = respawnPoint.position;
+
+        // 추가적인 리스폰 로직을 구현할 수도 있음
+
+        // 리스폰 후 필요한 초기화 작업 수행
+        isJumping = false; // 점프 상태 초기화 등
     }
 }
