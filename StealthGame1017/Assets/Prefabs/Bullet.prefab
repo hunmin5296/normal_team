@@ -168,3 +168,4 @@ MonoBehaviour:
   speed: 70
   bulletPrefab: {fileID: 0}
   bulletSpawnPoint: {fileID: 0}
+  damage: 1
