@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Wall
   - Lazer
+  - HeartUIManager
   layers:
   - Default
   - TransparentFX

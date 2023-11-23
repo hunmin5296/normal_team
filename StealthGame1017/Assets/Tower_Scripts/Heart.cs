@@ -9,8 +9,9 @@ public class Heart : MonoBehaviour
     public static Heart Instance;
     // HP를 표시할 슬라이더
     public Slider hpSlider;
+    public Image hpSlider_Img;
     public int MAX_HP = 10;
-    int hp = 0;
+    public int hp = 0;
     // 게임오버 플래그
     bool gameOver = false;
 
@@ -31,12 +32,17 @@ public class Heart : MonoBehaviour
 
     private void Update()
     {
+        hpSlider_Img.fillAmount = (float)hp / 10;
+
         // gameOver가 true이고 버튼이 클릭되면 게임을 재시작한다.
         if (gameOver == true && Input.GetMouseButtonDown(0))
         {
+         
             // 새 게임 로드
             SceneManager.LoadScene(0);
         }
+
+
     }
 
     public void Damage()
@@ -44,7 +50,7 @@ public class Heart : MonoBehaviour
         // 1씩 감소
         hp--;
         // 슬라이더에 HP를 세팅
-        hpSlider.value = hp;
+       
         if (hp <= 0)
         {
             // hp가 0이하면 게임오버

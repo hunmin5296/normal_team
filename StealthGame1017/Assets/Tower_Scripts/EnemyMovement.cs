@@ -16,10 +16,13 @@ public class EnemyMovement : MonoBehaviour
 
     private float baseSpeed;
 
+    public Heart heart;
+
     private void Start()
     {
         baseSpeed = moveSpeed;
         target = LevelManager.main.path[pathIndex];
+        heart = GameObject.FindGameObjectWithTag("HeartUIManager").GetComponent<Heart>();
     }
 
 
@@ -33,6 +36,7 @@ public class EnemyMovement : MonoBehaviour
             if (pathIndex == LevelManager.main.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
+                heart.Damage();
                 Destroy(gameObject);
                 return;
             }
