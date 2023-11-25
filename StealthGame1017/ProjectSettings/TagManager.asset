@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Lazer
   - HeartUIManager
+  - BULLET
   layers:
   - Default
   - TransparentFX
