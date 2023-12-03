@@ -39,7 +39,7 @@ public class TurretSlomo : MonoBehaviour
                 RaycastHit2D hit = hits[i];
 
                 EnemyMovement em = hit.transform.GetComponent<EnemyMovement>();
-                em.UpdateSpeed(0.5f);
+                em.UpdateSpeed(1f);
 
                 StartCoroutine(ResetEnemySpeed(em));
             }
